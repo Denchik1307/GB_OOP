@@ -32,10 +32,9 @@ public class HotDrink extends Product{
 
     @Override
     public String toString() {
-        return "HotDrink{" +
-                "name = " + super.getName() +
-                " \\ volume = " + this.volume +
-                " \\ temperature = " + this.temperature + "°C}\n";
+        return "Drink: " + super.getName() +
+                ", volume: " + this.volume +
+                ", temperature: " + this.temperature + "°C;";
     }
 
     @Override
@@ -52,19 +51,19 @@ public class HotDrink extends Product{
                 && getVolume() == that.getVolume();
     }
 
-    public enum Drinks{
-        Coffee("Coffee"),
-        Tea("Tea"),
-        Cacao("Cacao");
-
-        private final String drinkName;
-        private Drinks(String drink){
-            this.drinkName = drink;
-        }
-        @Override
-        public String toString(){
-            return drinkName;
-        }
-
-    }
+//    public enum Drinks{
+//        Coffee("Coffee"),
+//        Tea("Tea"),
+//        Cacao("Cacao");
+//
+//        private final String drinkName;
+//        private Drinks(String drink){
+//            this.drinkName = drink;
+//        }
+//        @Override
+//        public String toString(){
+//            return drinkName;
+//        }
+//
+//    }
 }

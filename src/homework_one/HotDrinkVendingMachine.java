@@ -45,4 +45,8 @@ public class HotDrinkVendingMachine implements VendingMachine {
         }
         throw new IllegalStateException(String.format("Drink %s not found  :(", name));
     }
+
+    public String getListDrinks(){
+        return productsHotDrinks.stream().toList().toString();
+    }
 }
