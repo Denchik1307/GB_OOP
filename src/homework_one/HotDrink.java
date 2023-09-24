@@ -32,7 +32,7 @@ public class HotDrink extends Product{
 
     @Override
     public String toString() {
-        return "BottleOfWater{" +
+        return "HotDrink{" +
                 "name = " + super.getName() +
                 " \\ volume = " + this.volume +
                 " \\ temperature = " + this.temperature + "°C}\n";
