@@ -26,6 +26,6 @@ public class Main {
         System.out.println(machine.getProduct("Tea", 70));
         System.out.println(machine.getProduct("mulled wine"));
         System.out.println(machine.getListDrinks());
-//        System.out.println(machine.getProduct("vodka"));
+//        System.out.println(machine.getProduct("vodka"));//exception test
     }
 }
