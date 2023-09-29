@@ -5,17 +5,22 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
         Market market = new Market();
+
+        List<Thread> threads = new ArrayList<>();
+        List<Human> persons = new ArrayList<>();
+
         Human human1 = new Human("Ivan");
         Human human2 = new Human("Vladimir");
         Human human3 = new Human("Den");
         Human human4 = new Human("Alex");
-        List<Thread> threads = new ArrayList<>();
-        List<Human> persons = new ArrayList<>();
+
         persons.add(human1);
         persons.add(human2);
         persons.add(human3);
         persons.add(human4);
+
         for (Human human : persons) {
             Thread tread = new Thread(new Runnable() {
                 @Override
@@ -30,7 +35,6 @@ public class Main {
         for (Thread thread : threads) {
 //            System.out.println(thread.getName());
             thread.start();
-
 
         }
         for (Thread thread : threads) {
